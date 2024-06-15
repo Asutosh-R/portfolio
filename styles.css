@@ -1,0 +1,74 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-me img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-me p {
+    font-size: 1.2em;
+}
+
+/* Portfolio section */
+.portfolio {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap items to the scrolling container */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.project-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust item width as needed */
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center; /* Snap items to the center */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
