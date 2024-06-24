@@ -6,6 +6,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 
+    <script src="script.js" defer></script> <!-- Link to your JS file for script -->
+
     <link rel="icon" type="image/x-icon" href="assests/icon/favicon.ico"> <!-- Link to favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assests/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assests/icon/favicon-16x16.png">
@@ -13,11 +15,22 @@
 
 
 </head>
+
 <body>
+    
     <header>
         <div class="container">
-            <h1>Asutosh Rath</h1>
-            <div class="Intro">
+            <div class="input-container">
+                <p id="nameInput">
+                    <h1>Asutosh Rath</h1></p>
+            </div>
+            <div class="display" id="nameDisplay"></div>
+            <section class="intro fade-in">
+                <h4>Data Analyst and Machine Learning Enthusiasm</h4>
+            </section>
+            
+            
+            <div class="intro">
                 <img src="assests/asu_pic.png" alt="My Picture">
                 <p>Embarking on a journey through the world of data analysis has been nothing short of exhilarating, and along the way, I've uncovered some fascinating insights, I think… 🤷‍♂️
                     I am proficient in key tools and languages such as Python, R, and SQL.
@@ -27,23 +40,40 @@
             </div>
         </div>
     </header>
+    <div class="sidebar">
+        <button class="close-btn">&times;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="input-container">
+    </div>
+    <div class="display" id="nameDisplay"></div>
+
 
     <main>
         <section class="portfolio">
-            <h2>Portfolio</h2>
+            
+            <h2>Projects</h2>
             <div class="project-gallery">
                 <!-- Replace these with your actual project images -->
                 <div class="project-item">
-                    <img src="project1.jpg" alt="Project 1">
-                    <p>Project 1 Description</p>
+                    <img src="assests/bookPictureGallery/book_recommendation.jpg" alt="Book Recommendation System">
+                    <img src="" alt="Book Recommendation System">
+                    <p>Recommendaing books with user perference and content based</p>
                 </div>
                 <div class="project-item">
-                    <img src="project2.jpg" alt="Project 2">
-                    <p>Project 2 Description</p>
+                    <img src="assests/housePricePrediction/house_price.jpeg" alt="House Price Prediction">
+                    <img src="assests/housePricePrediction/missing_values.png" alt="House Price Prediction">
+                    <p>Predicting Housing price for real estate business with accuracy of 87%</p>
                 </div>
                 <!-- Add more project items as needed -->
             </div>
         </section>
+
     </main>
 
     <script src="script.js"></script> <!-- Add JavaScript for scrolling functionality if needed -->
