@@ -19,62 +19,76 @@
 <body>
     
     <header>
-        <div class="container">
-            <div class="input-container">
-                <p id="nameInput">
-                    <h1>Asutosh Rath</h1></p>
+        <div class="header">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
-            <div class="display" id="nameDisplay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="monitor">
+                <div class="screen">
+                    <p class="typing-text">
+                        <h1>Hi, I am Asutosh Rath <br> I like to 
+                            <span id="typewriter"></span> 
+                            <span class='cursor' id="cursor">|</span></h1></p>
+                        
+                        <div class="display" id="nameDisplay"></div>
+                    </p>
+                </div>
+            
+
             <section class="intro fade-in">
                 <h4>Data Analyst and Machine Learning Enthusiasm</h4>
             </section>
-            
-            
-            <div class="intro">
-                <img src="assests/asu_pic.png" alt="My Picture">
-                <p>Embarking on a journey through the world of data analysis has been nothing short of exhilarating, and along the way, I've uncovered some fascinating insights, I think… 🤷‍♂️
-                    I am proficient in key tools and languages such as Python, R, and SQL.
-                    My fields of interest include exploring innovative data analysis techniques, building data-driven products, and delving into areas related to machine learning and AI.
-                    Whenever possible, I channel my enthusiasm into extracting insights from data using Python libraries like Pandas, NumPy, and Scikit-Learn, as well as data visualization tools like Matplotlib and Seaborn.
-                </p>
             </div>
+            <img src="assests/images.svg" alt="typing">
+            
         </div>
     </header>
-    <div class="sidebar">
-        <button class="close-btn">&times;</button>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <div class="input-container">
-    </div>
-    <div class="display" id="nameDisplay"></div>
+
+
 
 
     <main>
-        <section class="portfolio">
-            
+        <section class="project" id="projects">
             <h2>Projects</h2>
-            <div class="project-gallery">
-                <!-- Replace these with your actual project images -->
-                <div class="project-item">
-                    <img src="assests/bookPictureGallery/book_recommendation.jpg" alt="Book Recommendation System">
-                    <img src="" alt="Book Recommendation System">
-                    <p>Recommendaing books with user perference and content based</p>
+            <div class="project-gallery-container">
+                <div class="project-gallery">
+                    <!-- Project items with images and descriptions -->
+                    <div class="project-item">
+                        <img src="assests/bookPictureGallery/book_recommendation.jpg" alt="Book Recommendation System">
+                        <p>Recommending books with user preference and content-based</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="assests/housePricePrediction/house_price.jpeg" alt="House Price Prediction">
+                        <img src="assests/housePricePrediction/missing_values.png" alt="House Price Prediction">
+                        <p>Predicting housing prices with 87% accuracy</p>
+                    </div>
+                    <!-- Add more project items as needed -->
                 </div>
-                <div class="project-item">
-                    <img src="assests/housePricePrediction/house_price.jpeg" alt="House Price Prediction">
-                    <img src="assests/housePricePrediction/missing_values.png" alt="House Price Prediction">
-                    <p>Predicting Housing price for real estate business with accuracy of 87%</p>
-                </div>
-                <!-- Add more project items as needed -->
             </div>
+            <button id="scroll-left" class="slide-button">&#8249;</button>
+            <button id="scroll-right" class="slide-button">&#8250;</button>
         </section>
 
+
     </main>
+    <section id="about">
+        <div class="about-me">
+            <img src="assests/asu_pic.png" alt="My Picture">
+            <p>Embarking on a journey through the world of data analysis has been nothing short of exhilarating, and along the way, I've uncovered some fascinating insights, I think… 🤷‍♂️
+                I am proficient in key tools and languages such as Python, R, and SQL.
+                My fields of interest include exploring innovative data analysis techniques, building data-driven products, and delving into areas related to machine learning and AI.
+                Whenever possible, I channel my enthusiasm into extracting insights from data using Python libraries like Pandas, NumPy, and Scikit-Learn, as well as data visualization tools like Matplotlib and Seaborn.
+            </p>
+            
+        </div>
+
+    </section>
 
     <script src="script.js"></script> <!-- Add JavaScript for scrolling functionality if needed -->
 </body>

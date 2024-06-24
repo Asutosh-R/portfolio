@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         handleScrollAnimation();
     });
-    const nameInput = document.getElementById('nameInput');
-    const nameDisplay = document.getElementById('nameDisplay');
-    nameDisplay.textContent = nameInput.textContent;
+
+    
 });
