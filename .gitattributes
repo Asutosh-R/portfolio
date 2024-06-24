@@ -1,2 +1,8 @@
+
+# Set default behavior for all files
 * text=auto
+
+# Explicitly set LF for specific file types
 *.svg text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
